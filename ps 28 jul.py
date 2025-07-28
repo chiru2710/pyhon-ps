@@ -35,4 +35,16 @@ while n > 0:  # Example input: 1234
     n = n // 10
 print(count, "total number of digits in the number")
 
-#
+#write a program to find the prime numbers
+n = int(input("Enter a number: "))
+count=0
+if n<2:
+    print("less then 2 are not prime numbers")
+else:
+    for i in range(1,n+1):
+        if n%i==0:
+            count+=1
+if count==2:
+    print("prime number")
+else:
+    print("not a prime number")
